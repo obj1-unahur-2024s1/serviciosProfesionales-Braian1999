@@ -5,7 +5,7 @@ class ProfesionalAsociado {
 	method universidad() { return universidad }
 	method universidad(univ) { universidad = univ }
 	
-	method provinciasDondePuedeTrabajar() { return #{"Entre Ríos", "Corrientes", "Santa Fe"} }
+	method provinciasDondePuedeTrabajar() { return #{"Entre Ros", "Corrientes", "Santa Fe"} }
 	
 	method honorariosPorHora() { return 3000 }
 }
@@ -27,4 +27,11 @@ class ProfesionalLibre {
 	method universidad() { return universidad }
 	method universidad(univ) { universidad = univ }
 }
-a
+///////////
+class Universidad {
+	const property provincia
+	var horariosRecomendado
+	
+	method horariosRecomendado() = horariosRecomendado
+	method cambiarHorarios(nuevoHorario) {horariosRecomendado = nuevoHorario}
+}
