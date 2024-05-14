@@ -27,3 +27,4 @@ class ProfesionalLibre {
 	method universidad() { return universidad }
 	method universidad(univ) { universidad = univ }
 }
+a
